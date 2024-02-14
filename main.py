@@ -429,3 +429,7 @@ import shutil
 # from message import *
 # msg.hello()
 # msg.bye()
+
+# ROCK, PAPER, SCISSORS GAME 🗿
+import rpsGame as rps
+rps.rockPaperScissors()
