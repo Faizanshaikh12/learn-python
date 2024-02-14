@@ -1,5 +1,6 @@
 import math
 import time
+import random
 
 # print("I Love Pizza");
 # print("It is really good");
@@ -331,3 +332,12 @@ import time
 # print("The number pi is {:o}.".format(number))
 # print("The number pi is {:X}.".format(number))
 # print("The number pi is {:E}.".format(number))
+
+# RANDOM NUMBERS 🎲 
+# x = random.randint(1,6)
+# y = random.random()
+# myList = ['rock', 'paper', 'scissors']
+# z = random.choice(myList)
+# cards = [1,2,3,4,5,6,7,8,9,"J", "Q", "K", "A"]
+# random.shuffle(cards)
+# print(cards)
