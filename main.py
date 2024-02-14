@@ -431,5 +431,12 @@ import shutil
 # msg.bye()
 
 # ROCK, PAPER, SCISSORS GAME 🗿
-import rpsGame as rps
-rps.rockPaperScissors()
+# import rpsGame as rps
+# rps.rockPaperScissors()
+
+# QUIZ GAME 💯
+import quizGame
+quizGame.new_game()
+while quizGame.play_again():
+    quizGame.new_game()
+print("Thanks for playing!")
