@@ -341,3 +341,19 @@ import random
 # cards = [1,2,3,4,5,6,7,8,9,"J", "Q", "K", "A"]
 # random.shuffle(cards)
 # print(cards)
+
+# EXCEPTION HANDLING ⚠️ = events detected during execution that interrupt the flow of a program
+# try:
+#     numertor = int(input("Enter a number to divide: "))
+#     denominator = int(input("Enter a number to divide by: "))
+#     result = numertor / denominator
+# except ZeroDivisionError as e:
+#      print("Error", e)
+# except ValueError as e:
+#      print("Error", e)
+# except Exception as e:
+#     print("Someting went wrong!")
+# else:
+#     print(result)
+# finally:
+#     print("Call finally")
