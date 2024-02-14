@@ -149,7 +149,7 @@ import time
 #     time.sleep(1)
 # print(f"Time's up!")
 
-# NESTED LOOP
+# NESTED LOOP ➿
 # rows = int(input("How many rows? "))
 # columns = int(input("How many columns? "))
 # symbol = input("Enter a symbol to use? ")
@@ -159,7 +159,7 @@ import time
 #         print(symbol, end="")
 #     print()
 
-# LOOP CONTROL STATEMENTS = Change a loops execution from its normal sequnce.
+# LOOP CONTROL STATEMENTS ⛔ = Change a loops execution from its normal sequnce.
 # break = used to terminate the loop entirely.
 # continue = skips to the next iteration of the loop.
 # pass = does noting, acts as a placeholder
@@ -181,7 +181,7 @@ import time
 #     else:
 #         print(i)
 
-# LIST = used to store multiple items in a single variable
+# LIST 🧾 = used to store multiple items in a single variable
 # names = ["Faizan", "Poojan", "Nikunj", "Gotu"]
 # names.append("Shaikh")
 # names.remove("Poojan")
@@ -191,14 +191,14 @@ import time
 # names.clear()
 # print(names)
 
-# 2D LIST  =  a list of lists
+# 2D LIST 📜 =  a list of lists
 # names1 = ["Faizan", "Poojan", "Nikunj", "Gotu"]
 # names2 = ["Faizan", "Poojan", "Nikunj", "Gotu"]
 # names3 = ["Faizan", "Poojan", "Nikunj", "Gotu"]
 # names = [names1, names2, names3]
 # print(names)
 
-# TUPLES = Collection which is ordered and unchangeble used to group together related data
+# TUPLES 📄 = Collection which is ordered and unchangeble used to group together related data
 # student = ("Faizan", 23, "male")
 # print(student.count("Faizan"))
 # print(student.index("male"))
@@ -209,10 +209,10 @@ import time
 # if "Faizan" in student:
 #     print("Faizan is here!")
 
-# SET = collection which is unordered, unindexed. No duplicate values
-names1 = {"Faizan", "Poojan", "Nikunj"}
-names2 = {"Faizan", "Anas", "Gotu"}
-names = names1.union(names2)
+# SET 🍴 = collection which is unordered, unindexed. No duplicate values
+# names1 = {"Faizan", "Poojan", "Nikunj"}
+# names2 = {"Faizan", "Anas", "Gotu"}
+# names = names1.union(names2)
 # names1.add("Gotu")
 # names1.remove("Faizan")
 # names1.clear()
@@ -220,5 +220,114 @@ names = names1.union(names2)
 # print(names1)
 # print(names2.difference(names1))
 # print(names2.intersection(names1))
-for  name in names:
-    print(name)
+# for  name in names:
+#     print(name)
+
+# DiCTIONARY 📖 = A changeble, unorderd collection of unique key:value pairs fast because they use hasing, allow us to access a value quicky
+# capitals = {
+#     'USA':"Washington DC",
+#     'India': 'New Dehli',
+#     'China': 'Beijing',
+#     'Russia': 'Moscow'
+# }
+
+# print(capitals['USA'])
+# print(capitals.get('DD'))
+# print(capitals.keys())
+# print(capitals.values())
+# print(capitals.items())
+
+# capitals.update({'Germany': 'Berlin'})
+# capitals.update({'USA': 'Las Vegas'})
+# capitals.pop('China')
+# capitals.clear()
+
+# for key, value in capitals.items() :
+#     print(key, value)
+
+# INDEX Operator 📑 = gives access to a sequence's element (str, list, tuples)
+# name  = "faizan shaikh!"
+# if(name[0].islower()):
+#     name = name.capitalize()
+# print(name)
+# first_name = name[:6].upper()
+# last_name = name[7:].lower()
+# last_char = name[-1]
+# print(first_name)
+# print(last_name)
+# print(last_char)
+
+# FUNCATIONS 📞 = a block of code which is executed only when it is called
+# def hello(fname, lname):
+#     print("Hello, " + fname + " " +lname)
+# hello("Faizan", "Shaikh")
+
+# RETURN STATEMENTS 🔙 = Functions send python values/objects back to the caller. These values/objects are known as the function's return value
+# def  multiply(x , y):
+#     return x * y
+# x = multiply(5,3)
+# print(x)
+
+# KEYWORD ARGUMENTS 🔑 = arguments preceded by an identifier when we pass them to a function 
+                        # the order of the arguments doesn't matter, unlike positional arguments 
+                        # python knows the names of the arguments that our function receives
+# def hello(fname, lname):
+#     print("Hello, " + fname + " " +lname)
+# hello("Faizan", "Shaikh") # Hello, Faizan Shaikh
+# hello("Shaikh", "Faizan") # Hello, Shaikh Faizan
+# hello(lname="Shaikh", fname="Faizan") # Hello, Faizan Shaikh
+
+# NESTED FUNCTION CALLS 🖇️ = function calls inside other function calls 
+                            # innermost function calls are resolved first
+                            # returned value is used as argument for the next outer function
+# print(round(abs(float(input("Enter a positive number: ")))))
+
+# VARIABLE SCOPE 🔬 = The reigon that a variable is recognized
+                    # A Variable is only available from inside from inside the region it is created
+                    # A global and locally scoped versions of a variable can be created
+# name =  "Faizan" # global
+# def greet():
+#     name = "Shaikh" # local
+#     print(name)
+
+# greet()
+# print(name)
+
+# *ARGS 📦 = parameter that will pack all arguments into a tuple useful so that a function can accept a verying amount of arguments
+# def add(*stuff):
+#     sum = 0
+#     stuff = list(stuff)
+#     stuff[0] = 0
+#     for i in stuff:
+#         sum += i
+#     return sum
+
+# print(add(1,2,3,4,5))
+
+# **KWARGS 🎁 = parameter that will pack all arguments into a dictionary useful so that a function can accept a verying amount of keyword arguments
+# def hello(**names):
+#     # print("Hello " + names['fname'])
+#     print("Hello", end=" ")
+#     for key, value in names.items() :
+#         print(value, end=" ")
+
+# hello(fname = "Faizan", lname = "Shaikh")
+
+# STRING FORMAT 💬 = optional method that gives users more control when displaying output
+# fname = "Faizan"
+# lname = "Shaikh"
+# print('My First Name ' + fname + " or Last Name " + lname)
+# print("My First Name {} or Last Name {}".format(fname, lname))
+# print("My First Name {1} or Last Name {0}".format(fname, lname)) # positional args
+# print("My First Name {fname} or Last Name {lname}".format(fname = "Faizan", lname = "Shaikh")) # keyword args
+# print("Hello, my name is {:10}.  Nice to meet you!".format(fname))
+# print("Hello, my name is {:<10}.  Nice to meet you!".format(fname))
+# print("Hello, my name is {:>10}.  Nice to meet you!".format(fname))
+# print("Hello, my name is {:^10}.  Nice to meet you!".format(fname))
+# number = 1000
+# print("The number pi is {:.2f}.".format(number))
+# print("The number pi is {:,}.".format(number))
+# print("The number pi is {:b}.".format(number))
+# print("The number pi is {:o}.".format(number))
+# print("The number pi is {:X}.".format(number))
+# print("The number pi is {:E}.".format(number))
