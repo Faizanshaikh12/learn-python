@@ -1,6 +1,8 @@
 import math
 import time
 import random
+import os
+import shutil
 
 # print("I Love Pizza");
 # print("It is really good");
@@ -357,3 +359,61 @@ import random
 #     print(result)
 # finally:
 #     print("Call finally")
+
+# FILE DETECTION 📁
+# path = "C:\_faizan\python\.venv"
+# path = "C:\_faizan\python\plain.txt"
+# if os.path.exists(path):
+#     print(f"{path} exists.")
+#     if os.path.isfile(path): 
+#         print("That is a file")
+#     elif os.path.isdir(path):
+#         print("That is folder")
+# else:
+#     print(f"{path} is not found.")
+
+# READ A FILE 🔍
+# try:
+#     with open('plain.txt') as file:
+#         print(file.read())
+#     print(file.closed)
+# except FileNotFoundError:
+#     print("File not found!")
+
+# WRITE A FILE 📝
+# with open('plain.txt', 'a') as file: # 'w', 'a'
+#     text = "How Are you?\nI am Faizan.\nPython is awesome.\n"
+#     file.write(text)
+
+# COPY A FILE 🖨️
+# copyfile() = copies contents of a file
+# copy() = copyfile() + permission mode + destination can be a directory
+# copy2() = copy() + copies metadata (file's creation and modification times)
+# shutil.copyfile('plain.txt','copied.txt')
+
+# MOVE A FILE/FOLDER 🗃️
+# source = "move"
+# destination =  "new-move"
+# try:
+#     if os.path.exists(destination):
+#         print('There is already a file there')
+#     else:
+#         os.replace(source, destination)
+#         print(source + " was moved")
+# except FileNotFoundError:
+#     print(source + " was not found")
+
+# DELETE A FILE/FOLDER 🗑️
+# path = 'new-move'
+# try:
+#     # os.remove(path) # file
+#     os.rmdir(path) # empty folder
+#     shutil.rmtree(path) # not empty folder
+# except FileNotFoundError:
+#     print(path + " was not found")
+# except PermissionError:
+#     print("You do not have permission to delete that")
+# except OSError:
+#     print("You cannot delete that using that function")
+# else:
+#     print(path + " was deleted")
