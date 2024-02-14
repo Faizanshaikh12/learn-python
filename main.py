@@ -148,3 +148,77 @@ import time
 #     print(seconds)
 #     time.sleep(1)
 # print(f"Time's up!")
+
+# NESTED LOOP
+# rows = int(input("How many rows? "))
+# columns = int(input("How many columns? "))
+# symbol = input("Enter a symbol to use? ")
+
+# for i in range(rows):
+#     for j in range(columns):
+#         print(symbol, end="")
+#     print()
+
+# LOOP CONTROL STATEMENTS = Change a loops execution from its normal sequnce.
+# break = used to terminate the loop entirely.
+# continue = skips to the next iteration of the loop.
+# pass = does noting, acts as a placeholder
+
+# while True:
+#     name = input("Enter your name:")
+#     if name != "":
+#         break
+
+# phone_number = "123-456-7890"
+# for i in phone_number:
+#     if i == '-':
+#         continue
+#     print(i, end="")
+
+# for i in range(1,21):
+#     if i == 13:
+#         pass
+#     else:
+#         print(i)
+
+# LIST = used to store multiple items in a single variable
+# names = ["Faizan", "Poojan", "Nikunj", "Gotu"]
+# names.append("Shaikh")
+# names.remove("Poojan")
+# names.pop()
+# names.insert(2, "Shaikh")
+# names.sort()
+# names.clear()
+# print(names)
+
+# 2D LIST  =  a list of lists
+# names1 = ["Faizan", "Poojan", "Nikunj", "Gotu"]
+# names2 = ["Faizan", "Poojan", "Nikunj", "Gotu"]
+# names3 = ["Faizan", "Poojan", "Nikunj", "Gotu"]
+# names = [names1, names2, names3]
+# print(names)
+
+# TUPLES = Collection which is ordered and unchangeble used to group together related data
+# student = ("Faizan", 23, "male")
+# print(student.count("Faizan"))
+# print(student.index("male"))
+
+# for x in student:
+#     print(x)
+
+# if "Faizan" in student:
+#     print("Faizan is here!")
+
+# SET = collection which is unordered, unindexed. No duplicate values
+names1 = {"Faizan", "Poojan", "Nikunj"}
+names2 = {"Faizan", "Anas", "Gotu"}
+names = names1.union(names2)
+# names1.add("Gotu")
+# names1.remove("Faizan")
+# names1.clear()
+# names1.update(names2)
+# print(names1)
+# print(names2.difference(names1))
+# print(names2.intersection(names1))
+for  name in names:
+    print(name)
