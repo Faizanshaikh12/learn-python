@@ -417,3 +417,15 @@ import shutil
 #     print("You cannot delete that using that function")
 # else:
 #     print(path + " was deleted")
+
+
+# MODULES 💌
+# A file containing python code. May contain functions, classes etc.
+# used with modular programming, which is to separate a program into parts.
+# help("modules")
+# import message as msg  # best practice
+# import message
+# from message import hello, bye
+# from message import *
+# msg.hello()
+# msg.bye()
