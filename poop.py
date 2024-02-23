@@ -201,3 +201,23 @@ from car import Car
 # motorCycle = MotorCycle()
 # motorCycle.go()
 # motorCycle.stop()
+
+# OBJECTS AS ARGUMENTS 🏍️
+# class Car:
+#     color = None
+
+# class Bike:
+#     color = None
+
+
+# def change_color(car, color):
+#     car.color = color
+
+# car = Car()
+# bike = Bike()
+
+# change_color(car, "PINK")
+# change_color(bike, "BLUE")
+
+# print(car.color)
+# print(bike.color)
