@@ -131,3 +131,7 @@ from car import Car
     
 # car = Car()
 # car.turn_on().drive().brake().turn_off()
+# car.turn_on()\
+# .drive()\
+# .brake()\
+# .turn_off()
