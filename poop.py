@@ -98,3 +98,15 @@ from car import Car
 # hawk.hunt()
 # fish.hunt()
 # fish.flee()
+
+# METHOD OVERRIDING 🙅
+# class Prey:
+#     def flee(self):
+#         print("This animal flees")
+
+# class Prey2(Prey):
+#     def flee(self):
+#         print("This animal is hunting")
+
+# prey = Prey2()
+# prey.flee()
