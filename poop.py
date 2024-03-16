@@ -297,7 +297,7 @@ from car import Car
 # print(car.__name__)
 
 # TIME MODULE ⌚
-import time
+# import time
 # print(time.ctime(100000)) # convert a time expressed in seconds sinch epoch to a readable string.
 # print(time.time()) # return current seconds sinch epoch
 # print(time.ctime(time.time()))
@@ -308,7 +308,7 @@ import time
 # print(local_time)
 
 # time_string = "20 April, 2020"
-# time_obj = time.strptime(time_string, "%d %B, %Y")
+# time_obj = time.strptime(time_string, "%d %B, %Y"# 
 # print(time_obj)
 
 # time_tuple = (2020, 4, 20, 4, 20, 0, 0, 0, 0)
@@ -319,7 +319,51 @@ import time
 # time_string = time.mktime(time_tuple)
 # print(time_string)
 
+# THREADING 🧵
+# thread = a flow of execution. like a separate order of instructions
+# However each thread takes a turn running to achieve concurrency
+# GIL = global interpreter lock.
+# allow only one thread to hold the control of the python interpreter
 
+# cpu bound = program/task spends most of it's time waiting for internal events
+# io bound  = program/task spends most of it's time waiting for external events
 
+# DAEMON THREADS 😈
+# a thread that runs in the background, not importent for program to run
+# you program will not wait for demon threads to complete before existing
+# non-demon cannot normally be killed, stay alive until task is complete
+# ex. background tasks, garbage collection, waiting for input, long running process.
 
+# MULTIPROCESSING ⚡
+# Running tasks in parallel on diffrent cpu cores, bypasses GIL used for threading
+# multiprocessing = better for cpu bound tasks (heavy cpu usages)
+# multithreading = better for io bound tasks (waiting bound)
+# from multiprocessing import Process, cpu_count
 
+# def counter(num):
+#     count = 0
+#     while count < num:
+#         count += 1
+
+# def main():
+#     print(cpu_count())
+
+#     a = Process(target=counter, args=(1000000000,))
+#     b = Process(target=counter, args=(1000000000,))
+#     c = Process(target=counter, args=(1000000000,))
+#     d = Process(target=counter, args=(1000000000,))
+
+#     a.start()
+#     b.start()
+#     c.start()
+#     d.start()
+
+#     a.join()
+#     b.join()
+#     c.join()
+#     d.join()
+
+#     print("Finished in:", time.perf_counter(), "seconds")
+
+# if __name__ == "__main__":
+#     main()
