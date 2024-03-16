@@ -295,3 +295,31 @@ from car import Car
 # import car
 # print(__name__)
 # print(car.__name__)
+
+# TIME MODULE ⌚
+import time
+# print(time.ctime(100000)) # convert a time expressed in seconds sinch epoch to a readable string.
+# print(time.time()) # return current seconds sinch epoch
+# print(time.ctime(time.time()))
+# time_obj = time.localtime() #local time
+# time_obj = time.gmtime() # UTC time
+# print(time_obj)
+# local_time = time.strftime("%B %d %Y %H:%M:%S", time_obj)
+# print(local_time)
+
+# time_string = "20 April, 2020"
+# time_obj = time.strptime(time_string, "%d %B, %Y")
+# print(time_obj)
+
+# time_tuple = (2020, 4, 20, 4, 20, 0, 0, 0, 0)
+# time_string = time.asctime(time_tuple)
+# print(time_string)
+
+# time_tuple = (2020, 4, 20, 4, 20, 0, 0, 0, 0)
+# time_string = time.mktime(time_tuple)
+# print(time_string)
+
+
+
+
+
