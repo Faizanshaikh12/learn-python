@@ -271,3 +271,13 @@ from car import Car
 # foods = list()
 # while food := input("What food do you like?: ") != "quit":
 #     foods.append(food)
+
+# ZIP FUNCTION 🤐 (*iterables)
+# aggregate elements from two or more iterables (list, tuples, sets etc.)
+# creates a zip object with paired elemetns stored in tuples for each elements.
+usernames = ["Dude", "Bro", "Mister"]
+passwords = ["Password", "Admin123", "guest"]
+
+users = zip(usernames, passwords)
+for i in users:
+    print(i)
