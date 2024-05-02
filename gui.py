@@ -88,3 +88,28 @@ from tkinter import *
 # show_button.pack(pady=10)
 
 # window.mainloop()
+
+# radiobuttons 🔘
+# def show_selection():
+#     print("Selected food:", var.get())
+
+# window = Tk()
+# window.geometry("300x200")
+# window.title("Radio Buttons")
+
+# # Array of food items
+# foods = ["Pizza", "Burger", "Sushi", "Tacos"]
+
+# # IntVar to track the selected food
+# var = IntVar()
+
+# # Create radio buttons for each food item
+# for food in foods:
+#     radio_button = Radiobutton(window, text=food, variable=var, value=food)
+#     radio_button.pack(anchor=W)
+
+# # Button to show selection
+# show_button = Button(window, text="Show Selection", command=show_selection)
+# show_button.pack(pady=10)
+
+# window.mainloop()
