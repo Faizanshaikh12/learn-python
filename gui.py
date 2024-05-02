@@ -44,3 +44,23 @@ from tkinter import *
 # button.pack(pady=20)
 
 # window.mainloop()
+
+# entry ⌨️
+def submit():
+    input_text = entry.get()
+    print("Submitted text:", input_text)
+    # You can perform any action with the input_text here, like processing it or displaying it in another widget
+
+window = Tk()
+window.geometry("300x150")
+window.title("Entry Box and Submit Button")
+
+# Entry box
+entry = Entry(window, width=30)
+entry.pack(pady=10)
+
+# Submit button
+submit_button = Button(window, text="Submit", command=submit)
+submit_button.pack()
+
+window.mainloop()
