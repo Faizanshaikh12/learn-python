@@ -19,19 +19,28 @@ from tkinter import *
 # labels 🏷️
 # window = Tk()
 
-# # Load the image
 # image = PhotoImage(file="python-logo.png")
 
-# # Resize the image to desired dimensions
 # width, height = 100, 100  # Set your desired width and height
 # image = image.subsample(image.width() // width, image.height() // height)
 
-# # Create a label with both text and image
 # label = Label(window, text="Hello Python", image=image, compound="bottom")
 # label.pack()
 
-# # Center the image within the label
 # label.image = image  # Keep a reference to the image to prevent garbage collection
 # label.config(anchor=CENTER)
+
+# window.mainloop()
+
+# buttons 🛎️
+# def button_click():
+#     print("Button clicked!")
+
+# window = Tk()
+# window.geometry("200x100")
+# window.title("Click Me Button")
+
+# button = Button(window, text="Click Me", command=button_click)
+# button.pack(pady=20)
 
 # window.mainloop()
